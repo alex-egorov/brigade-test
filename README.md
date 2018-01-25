@@ -1,4 +1,12 @@
 
 
+Install brigade
+```
+helm upgrade -i --set rbac.enabled=true brigade brigade
+```
 
-helm upgrade -i -f brigade-test.yaml brigade-test brigade/brigade-project 
+
+Install project 
+```
+helm upgrade -i -f brigade-test.yaml brigade-test brigade/brigade-project
+```
