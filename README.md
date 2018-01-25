@@ -9,5 +9,5 @@ helm upgrade -i --set rbac.enabled=true brigade brigade
 
 Install project 
 ```
-helm upgrade -i -f brigade-test.yaml brigade-test brigade/brigade-project
+helm upgrade -i -f brigade-test.yaml --set github.token=<oath_token> brigade-test brigade/brigade-project
 ```
